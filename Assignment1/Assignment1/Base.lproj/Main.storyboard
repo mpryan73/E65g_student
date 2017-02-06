@@ -20,7 +20,40 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OYI-wC-goh">
+                                <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JZD-mI-NeP">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kwx-Cd-ZMl">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvl-T4-VjL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                                        <color key="backgroundColor" red="0.26429578993055558" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="pvl-T4-VjL" firstAttribute="height" relation="lessThanOrEqual" secondItem="Kwx-Cd-ZMl" secondAttribute="height" constant="0.80000000000000004" id="6Wm-7R-GIV"/>
+                                                    <constraint firstItem="pvl-T4-VjL" firstAttribute="width" relation="lessThanOrEqual" secondItem="Kwx-Cd-ZMl" secondAttribute="width" constant="0.80000000000000004" id="mHM-O1-iSR"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Kth-v7-Thz"/>
+                                    <constraint firstAttribute="height" constant="240" id="zHW-3M-x80"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OYI-wC-goh" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="HDG-ZS-F4v"/>
+                            <constraint firstItem="OYI-wC-goh" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="zwY-Rm-DNu"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                 </viewController>
