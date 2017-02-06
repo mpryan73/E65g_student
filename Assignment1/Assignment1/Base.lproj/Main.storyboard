@@ -66,12 +66,12 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BPv-HQ-xYA" userLabel="Grid Size">
-                                                <rect key="frame" x="128" y="113" width="118" height="31"/>
+                                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BPv-HQ-xYA" userLabel="Grid Size">
+                                                <rect key="frame" x="178" y="116" width="118" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SpI-29-vxG" userLabel="Frames/second">
-                                                <rect key="frame" x="128" y="164" width="118" height="31"/>
+                                                <rect key="frame" x="178" y="164" width="118" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Generation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6V-bZ-60M">
@@ -86,6 +86,20 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Reset"/>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Frames/second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlI-se-pQ3">
+                                                <rect key="frame" x="52" y="164" width="119" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grid Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2c-XP-nK8">
+                                                <rect key="frame" x="102" y="116" width="69" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.56730143229166663" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <userDefinedRuntimeAttributes>
@@ -109,12 +123,20 @@
                                     <constraint firstAttribute="trailing" secondItem="Ja8-OJ-g5d" secondAttribute="trailing" id="02Z-G0-yb9"/>
                                     <constraint firstAttribute="bottom" secondItem="fFg-e4-AWE" secondAttribute="bottom" id="1Ow-bd-8qO"/>
                                     <constraint firstItem="Ja8-OJ-g5d" firstAttribute="height" secondItem="NkL-Nq-8xt" secondAttribute="height" multiplier="0.5" id="5Qr-Kk-23x"/>
+                                    <constraint firstItem="fFg-e4-AWE" firstAttribute="leading" secondItem="Ja8-OJ-g5d" secondAttribute="leading" id="Apk-KE-Oiy"/>
                                     <constraint firstItem="Ja8-OJ-g5d" firstAttribute="top" secondItem="NkL-Nq-8xt" secondAttribute="top" id="BmZ-IF-fby"/>
                                     <constraint firstItem="Ja8-OJ-g5d" firstAttribute="leading" secondItem="NkL-Nq-8xt" secondAttribute="leading" id="HxQ-Yo-oaX"/>
+                                    <constraint firstItem="Ja8-OJ-g5d" firstAttribute="top" secondItem="NkL-Nq-8xt" secondAttribute="top" id="Mw1-pU-HUV"/>
                                     <constraint firstAttribute="trailing" secondItem="fFg-e4-AWE" secondAttribute="trailing" id="rsu-eO-y4d"/>
                                     <constraint firstItem="fFg-e4-AWE" firstAttribute="leading" secondItem="NkL-Nq-8xt" secondAttribute="leading" id="utk-Bw-GtQ"/>
                                     <constraint firstItem="fFg-e4-AWE" firstAttribute="top" secondItem="Ja8-OJ-g5d" secondAttribute="bottom" id="wSR-Iz-NAG"/>
+                                    <constraint firstItem="Ja8-OJ-g5d" firstAttribute="leading" secondItem="NkL-Nq-8xt" secondAttribute="leading" id="yfC-6l-KUM"/>
                                 </constraints>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="02Z-G0-yb9"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
