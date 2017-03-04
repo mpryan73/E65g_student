@@ -87,6 +87,7 @@ import Foundation
 */
 // ** Your Problem 1 code goes here! replace the following line **
 typealias Position = (row: Int, col: Int)
+
 /*:
  ## Problem 2: 
  Using the enum `CellState` defined below:
@@ -101,10 +102,16 @@ typealias Position = (row: Int, col: Int)
 enum CellState {
     // ** Your Problem 2 code goes here! Replace the contents of CellState **
     //  This shell code is here so that at all times the playground compiles and runs
-    case empty
+    case empty, alive, born, died
     
     var isAlive: Bool {
-        return false
+        switch self {
+        case .alive:
+            return true
+        case .born:
+            return true
+        default:
+            return false}
     }
 }
 /*:
